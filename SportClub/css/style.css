@@ -1,0 +1,475 @@
+*,html{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+.fa-star.checked{
+    color: orange;
+}
+#header_logo_navbar{
+    background-color: #00632c;
+}
+#header_logo_navbar .navbar>.navbar-brand.logo{
+    padding:10px 10px;
+}
+#header_logo_navbar .logo>img{
+    width: 150px;
+}
+#header_logo_navbar .navbar .navbar-collapse ul li{
+    height: 100%;
+}
+#header_logo_navbar .navbar .navbar-collapse ul li a{
+    font-size: 1.1em;
+    padding:35px 30px;
+    font-weight: 300;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+#header_logo_navbar .navbar .navbar-collapse ul li a:hover{
+    color: orange;
+    font-weight: 500;
+}
+#header_logo_navbar .navbar .navbar-collapse ul li a::before{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 0;
+    height:4px;
+    background-color: orange;
+    transition: all .3s ease-in-out;
+}
+#header_logo_navbar .navbar .navbar-collapse ul li a:hover::before{
+    width: 100%;
+}
+@media(max-width: 768px){
+    #header_logo_navbar .navbar .navbar-collapse ul li a{
+        padding:10px 0;
+    }
+    #header_logo_navbar .navbar .navbar-collapse ul li a::before{
+        content: none;
+    }
+    #header_logo_navbar .navbar .navbar-collapse#navbarSupportedContent{
+       border-top: 1px solid rgba(255,255,255,0.2);
+    }
+}
+@media(max-width: 576px){
+    #header_logo_navbar{
+        padding:0 20px;
+    }
+}
+#social_icons_number_email{
+    background-color: #004720;
+}
+#social_icons_number_email .social_icons{
+    height:100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+#social_icons_number_email .social_icons>span{
+    font-size: 1.5em;
+    color: #49524d;
+}
+#social_icons_number_email .social_icons>span>svg{
+    color: #fff;
+}
+#social_icons_number_email .social_icons>span:not(:last-child){
+    margin-right: 10px;
+}
+#social_icons_number_email .email_mobile{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height:100%;
+}
+#social_icons_number_email .email_mobile>p{
+    margin:0;
+    color: #fff;
+}
+#social_icons_number_email .email_mobile>p>span{
+     letter-spacing: 1.2;
+     font-weight: 300;
+}
+#social_icons_number_email .email_mobile>p>span svg{
+    color: orange;
+}
+#social_icons_number_email .email_mobile>p>span:not(:last-child){
+    margin-right: 20px;
+}
+@media(max-width:768px){
+    #social_icons_number_email{
+        padding:10px 0;
+    }
+    #social_icons_number_email .social_icons,
+    #social_icons_number_email .email_mobile{
+        justify-content: center;
+    }
+}
+
+/****************Header Banner Styles***************************/
+#header_banner .banner{
+    height:500px;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#header_banner .banner .banner_content{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:0 120px;
+}
+#header_banner .banner .banner_content>h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+#header_banner .banner .banner_content>p{
+    margin:0;
+    color: orange;
+    font-size: 1.4em;
+    width:40%;
+}
+#header_banner .banner .banner_content>.read_more_btn{
+    width:120px;
+    padding:10px 0;
+    margin-top: 20px;
+}
+@media(max-width: 768px){
+    #header_banner .banner{
+        height: 400px;
+    }
+    #header_banner .banner .banner_content{
+        align-items: center;
+        padding:0;
+    }
+    #header_banner .banner .banner_content>h1{
+        font-size:2em;
+    }
+    #header_banner .banner .banner_content>p{
+        width:60%;
+    }
+}
+@media(max-width: 500px){
+    #header_banner .banner{
+        height: 300px;
+    }
+    #header_banner .banner .banner_content>p{
+        width:80%;
+    }
+}
+@media(max-width: 450px){
+    #header_banner .banner .banner_content>h1{
+        font-size:1.5em;
+    }
+    #header_banner .banner .banner_content>p{
+        width:80%;
+    }
+}
+
+
+/******************Welcome Styles***************************/
+#welcome_comming_events{
+    padding: 100px 0;
+}
+#welcome_comming_events .welcome_msg{
+    padding-right: 100px;
+}
+#welcome_comming_events .welcome_msg>.welcome_title,
+#welcome_comming_events .coming_events .events_title{
+    color: orange;
+    font-weight: 900;
+    font-size:2em;
+}
+#welcome_comming_events .welcome_msg>.welcome_quotation{
+    font-size: 1.8em;
+    font-weight: 300;
+    color: #3d4942;
+}
+#welcome_comming_events .welcome_msg>.welcome_content{
+    color: #3d4942;
+    text-align: justify;
+    font-size:0.9em;
+    line-height: 1.8;
+    word-spacing: 2;
+}
+#welcome_comming_events .coming_events .single_event>a{
+    display: flex;
+    align-items: center;
+    padding:20px 0;
+    text-decoration: none;
+    color: #3d4942;
+}
+#welcome_comming_events .coming_events .single_event>:not(:last-child){
+    border-bottom: 1px solid #eaeaea;
+}
+#welcome_comming_events .coming_events .single_event img{
+    width: 70px;
+    height: 70px;
+}
+#welcome_comming_events .coming_events .single_event h4{
+    font-size: 1.2em;
+    margin-left: 20px;
+}
+@media(max-width: 768px){
+    #welcome_comming_events .welcome_msg{
+        padding-right: 0;
+    }
+}
+
+
+/****************************Quotation Styles******************************/
+#quotation{
+    height: 300px;
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#quotation .quotation{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height:100%;
+}
+#quotation .quotation .quotation_content{
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+}
+#quotation .quotation .name{
+    color: orange;
+}
+
+
+
+/********************Game Highlights styles*********************/
+#game_highlights{
+    padding: 100px 0;
+}
+#game_highlights .image{
+    border: 4px solid orange;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    cursor:pointer;
+}
+#game_highlights .image img{
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease-in-out;
+}
+#game_highlights .image:hover img{
+    transform: scale(1.2);
+}
+#game_highlights .hightlight_title{
+    color: orange;
+    font-weight: 900;
+    font-size:2em;
+}
+@media(max-width: 768px){
+    #game_highlights .image{
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/*********************Footer Style************************/
+#footer{
+    background-color: rgba(0,0,0,0.7);
+}
+#footer .copyright{
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer .copyright>p{
+    margin:0;
+    color: #fff;
+    font-size: 1em;
+}
+
+
+
+/*************************Events page styles***************************/
+#events_main{
+    background-color: rgba(0,0,0,0.3);
+    padding-bottom: 100px;
+}
+
+#events .container{
+    max-width:60%;
+    height: auto;
+    border:5px solid #00632c;
+    margin-top: -100px;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    padding: 50px 20px;
+}
+#events .events_title{
+    color: orange;
+    font-weight: 900;
+    font-size:2em;
+}
+#events .events_description>p{
+    color: rgba(0,0,0,0.6);
+    margin-top: 10px;
+    font-size: 1.2em;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    padding-bottom: 30px;
+}
+#events .single_event_image{
+    border: 4px solid orange;
+    height: 200px;
+}
+#events .single_event_image>img{
+    width: 100%;
+    height: 100%;
+}
+#events .single_event_description{
+    padding-left: 40px;
+}
+@media(max-width: 1200px){
+    #events .container{
+        max-width:70%;
+    }
+}
+
+@media(max-width: 992px){
+    #events .container{
+        max-width:80%;
+    }
+}
+@media(max-width: 768px){
+    #events .container{
+        max-width:90%;
+    }
+    .single_event_col{
+        margin-bottom: 40px;
+    }
+}
+
+
+/***************************Team page styles***********************/
+#team_main{
+    padding:100px 0;
+}
+#team .team_title> h4{
+    color: orange;
+    font-weight: 900;
+    font-size:2em;
+}
+#team .team_description>p{
+    color: rgba(0,0,0,0.6);
+    margin-top: 10px;
+    font-size: 1.2em;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    padding-bottom: 30px;
+}
+#team .team_box{
+    border:1px solid rgba(0,0,0,0.2);
+    padding: 20px;
+    margin-top: 40px;
+}
+#team .team_box>.image{
+    height: 300px;
+}
+#team .team_box>.image>img{
+    width: 100%;
+    height: 100%;
+}
+#team .team_box>.name{
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+/************************Gallery page sytles*************************/
+.resturant_gallery{
+    border-bottom: 1px solid #e2e2e2e2  ;
+}
+.resturant_gallery_row{
+    padding:70px 0;
+}
+.resturant_gallery_heading{
+    text-align: center;
+    color:#010101;
+    margin-bottom: 80px;
+}
+.resturant_gallery_heading>h3{
+    font-size:30px;
+}
+.resturant_gallery_heading>p{
+    color:#666666;
+    font-size:19px;
+    font-weight: 500;
+}
+.resturant_gallery_image{
+    margin-bottom:30px;
+}
+.resturant_gallery_image>img{
+    width:100%;
+    border:3px solid #d65106;
+    transition: all .3s;
+}
+.resturant_gallery_image:hover img{
+    transform: scale(1.03);
+    border:0;
+}
+
+.resturant_special_menu_col{
+    text-align: center;
+    padding-bottom:40px !important;
+}
+.resturant_special_menu_tabs{
+    border:1px solid #e3e3e3;
+    display: inline-block;
+}
+.resturant_special_menu_tabs>.filter-button{
+    color:#333;
+    padding:10px 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition:all .5s;
+}
+.resturant_special_menu_tabs>.filter-button:hover,
+.resturant_special_menu_tabs>.filter-button:focus{
+    background-color: #d65106;
+    color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+.resturant_special_menu_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     position: relative;
+     overflow: hidden;
+}
+.resturant_special_menu_image>img{
+    border:0;
+    transform:scale(1) !important;
+    height:210px;
+    
+}
+
+
+/*************************Contact Styles****************************/
+#contact_main{
+    padding: 100px 0;
+}
+#contact .contact_title>h4{
+    color: orange;
+    font-weight: 900;
+    font-size:2em;
+    margin-bottom: 40px;
+}

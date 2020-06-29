@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SportClub.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link href="fontawesome/all.css" rel="stylesheet" />
+    <link href="light-box/lightbox.css" rel="stylesheet" />
+    	<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="fontawesome/all.js"></script>
+		<script type="text/javascript" src="light-box/lightbox.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+
+
+</head>
+<body>
+    <form runat="server">
+        
+        <header>
+			<div id="header_logo_navbar">
+				<div class="container p-0">
+					<div class="row m-0"><!--row 1 start-->
+						<div class="col-sm-12 p-0">
+							<nav class="navbar navbar-expand-md navbar-dark p-0">
+								<div class="navbar-brand logo">
+									<h1>DEMPO SPORTS CLUB</h1>
+								</div>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                
+                                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" href="Default.aspx">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" href="Login.aspx">Login</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" href="gallery.aspx">Gallery</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+						</div>
+					</div><!--row 1 end-->
+
+				</div>
+			</div>
+			<div id="social_icons_number_email"><!--#social_icons_number_email start-->
+				<div class="container p-0">
+					<div class="row m-0"><!--row 2 start-->
+						<div class="col-sm-12 col-md-2 p-0">
+							<div class="social_icons">
+								<span class="facebook"><i class="fab fa-facebook"></i></span>
+								<span class="twitter"><i class="fab fa-twitter"></i></span>
+								<span class="google"><i class="fab fa-google-plus"></i></span>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-10 p-0">
+							<div class="email_mobile">
+								<p>
+									<span class="number"><i class="fas fa-mobile-alt"></i> +91-00000-00000</span>
+									<span class="email"><i class="fas fa-envelope"></i> abc123@gmail.com</span>
+								</p>
+							</div>
+						</div>
+					</div><!--row 2 end-->
+				</div>
+			</div><!--#social_icons_number_email end-->
+			<div id="header_banner"><!--#header_banner start-->
+				<div class="container-fluid p-0">
+					<div class="row m-0">
+						<div class="col-sm-12 p-0">
+							<div class="banner" style="background-image:url('images/football-1.jpg');">
+								<div class="banner_content">
+									<h1>Our Sweat - Beautiful <br/>Club</h1>
+									<p>One man practicing sportsmanship is far better than a hundred teaching it.</p>
+									<a href="#" class="btn btn-warning read_more_btn">Read More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--#header_banner end-->
+		</header>
+
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+        </div>
+        
+		<footer>
+			<div id="footer">
+				<div class="container-fluid p-0">
+					<div class="row m-0">
+						<div class='col-sm-12 p-0'>
+							<div class="copyright">
+								<p>&copy; 2020 - Sports Club</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+    </form>
+</body>
+</html>
